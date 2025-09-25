@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="project.campusflow.meta.title">CampusFlow LLM 助手 · 项目详情</title>
+    <meta name="description" content="CampusFlow LLM 助手项目详情，展示校园知识问答助手的设计、架构与成果。" data-i18n-attr-content="project.campusflow.meta.description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-lang="zh" data-page="campusflow">
+    <header class="site-header" id="top">
+        <nav class="nav">
+            <a class="nav__brand" href="../index.html" data-i18n="nav.brand">CJ.</a>
+            <button class="nav__toggle" aria-label="打开导航" data-i18n-attr-aria-label="nav.toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__list">
+                <li><a href="../index.html#about" data-i18n="nav.about">关于我</a></li>
+                <li><a href="../index.html#experience" data-i18n="nav.experience">经历</a></li>
+                <li><a href="../index.html#projects" data-i18n="nav.projects">项目</a></li>
+                <li><a href="../index.html#insights" data-i18n="nav.insights">行业洞察</a></li>
+                <li><a href="../index.html#contact" data-i18n="nav.contact">联系</a></li>
+            </ul>
+            <button class="nav__lang" id="languageToggle" data-i18n="nav.langToggle" aria-label="切换语言" data-i18n-attr-aria-label="nav.langToggleLabel">EN</button>
+        </nav>
+    </header>
+    <div class="lang-notice" data-i18n="notice.jsWarning">🌐 如果语言未自动切换，请开启浏览器 JavaScript。</div>
+
+    <main>
+        <section class="hero" id="overview">
+            <div class="hero__content">
+                <p class="hero__eyebrow" data-i18n="project.campusflow.hero.eyebrow">智能校园 · RAG + LLM</p>
+                <h1 data-i18n="project.campusflow.hero.title">CampusFlow LLM 助手</h1>
+                <p class="hero__summary" data-i18n="project.campusflow.hero.summary">一站式校园知识问答助手，以 GPT-4 为核心，接入校级知识库与系统 API，帮助学生高效获取课程、行政、活动等信息，打造可落地的 AI 交互体验。</p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="#links" data-i18n="project.common.heroCta">查看项目资源</a>
+                    <a class="btn" href="../index.html#projects" data-i18n="project.common.back">返回精选项目</a>
+                </div>
+                <ul class="hero__meta">
+                    <li><span data-i18n="project.common.heroRole">角色</span><strong data-i18n="project.campusflow.hero.roleValue">产品负责人 / LLM 工程师</strong></li>
+                    <li><span data-i18n="project.common.heroTime">时间</span><strong data-i18n="project.campusflow.hero.timeValue">2023.03 — 2023.09</strong></li>
+                    <li><span data-i18n="project.common.heroTeam">团队规模</span><strong data-i18n="project.campusflow.hero.teamValue">3 名工程 + 1 名设计</strong></li>
+                </ul>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__card">
+                    <h2 data-i18n="project.campusflow.hero.milestoneTitle">核心里程碑</h2>
+                    <ul>
+                        <li data-i18n="project.campusflow.hero.m1">两周完成 MVP，3 周上线校园内测</li>
+                        <li data-i18n="project.campusflow.hero.m2">15k+ 对话 & 4.7/5 满意度</li>
+                        <li data-i18n="project.campusflow.hero.m3">函数调用集成教务/日程系统</li>
+                        <li data-i18n="project.campusflow.hero.m4">自动化评估闭环验证回答质量</li>
+                    </ul>
+                </div>
+                <div class="hero__card hero__card--gradient">
+                    <p data-i18n="project.campusflow.hero.quote">"智能问答不止是聊天，更是连接真实校园服务的体验升级。"</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="impact">
+            <div class="section__header">
+                <h2 data-i18n="project.common.impact">关键成果</h2>
+                <p data-i18n="project.campusflow.impact.subtitle">从调研、设计、模型改进到落地评估，推动项目完成从 0 到 1 的上线与迭代。</p>
+            </div>
+            <div class="about__grid">
+                <div class="about__card">
+                    <h3 data-i18n="project.campusflow.impact.card1.title">需求洞察</h3>
+                    <ul>
+                        <li data-i18n="project.campusflow.impact.card1.item1">调研 60+ 学生痛点场景，建立信息需求层级</li>
+                        <li data-i18n="project.campusflow.impact.card1.item2">使用 Journey Mapping 对多角色流程建模</li>
+                        <li data-i18n="project.campusflow.impact.card1.item3">设定响应时限 &lt; 4s、满意度 ≥ 4.5 的核心指标</li>
+                    </ul>
+                </div>
+                <div class="about__card">
+                    <h3 data-i18n="project.campusflow.impact.card2.title">产品设计</h3>
+                    <ul>
+                        <li data-i18n="project.campusflow.impact.card2.item1">基于 LangChain 构建多路由对话流程与上下文记忆</li>
+                        <li data-i18n="project.campusflow.impact.card2.item2">提出“任务卡片”结构，支持多轮指令拆解执行</li>
+                        <li data-i18n="project.campusflow.impact.card2.item3">打造仪表盘监控召回率、响应时延与反馈标签</li>
+                    </ul>
+                </div>
+                <div class="about__card">
+                    <h3 data-i18n="project.campusflow.impact.card3.title">业务影响</h3>
+                    <ul>
+                        <li data-i18n="project.campusflow.impact.card3.item1">新生入学流程咨询效率提升 65%</li>
+                        <li data-i18n="project.campusflow.impact.card3.item2">教务处重复工单减少 28%</li>
+                        <li data-i18n="project.campusflow.impact.card3.item3">开放 API 后，校园社团接入 12 个自定义插件</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="gallery">
+            <div class="section__header">
+                <h2 data-i18n="project.common.gallery">动图演示</h2>
+                <p data-i18n="project.campusflow.gallery.subtitle">展示从课程匹配、活动推荐到行政流程办理的核心路径。</p>
+            </div>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-card__media">
+                        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2QxYW8zMXludDNqNDkzZWppeWVhbDZvMG10eWlqdWRlbWpmNGZzMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6Zt8zk9vP0S5qWdK/giphy.gif" alt="智能问答演示" data-i18n-attr-alt="project.campusflow.gallery.card1.alt">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 data-i18n="project.campusflow.gallery.card1.title">课程匹配对话</h3>
+                        <p data-i18n="project.campusflow.gallery.card1.desc">根据学生的专业、兴趣与已修课程，为其推荐最佳选课组合并同步至日程。</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__media">
+                        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTB6cW9jZmVwcHZvb2szbjd4eHhuenFndXNqOG4zNmp3MjMydWJiYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2QE4a3u8JpVx5xOg/giphy.gif" alt="活动推荐演示" data-i18n-attr-alt="project.campusflow.gallery.card2.alt">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 data-i18n="project.campusflow.gallery.card2.title">活动推荐 & 通知</h3>
+                        <p data-i18n="project.campusflow.gallery.card2.desc">结合学生画像与社团数据库，推送个性化活动并以 webhook 形式发送提醒。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="stack">
+            <div class="section__header">
+                <h2 data-i18n="project.common.tech">技术实现</h2>
+                <p data-i18n="project.campusflow.tech.subtitle">从数据采集、模型调用到服务部署的完整方案。</p>
+            </div>
+            <div class="timeline">
+                <article class="timeline__item">
+                    <span class="timeline__date" data-i18n="project.campusflow.tech.card1.meta">Architecture</span>
+                    <div class="timeline__content">
+                        <h3 data-i18n="project.campusflow.tech.card1.title">RAG + 函数调用闭环</h3>
+                        <p data-i18n="project.campusflow.tech.card1.desc">结合 Weaviate 向量数据库，按场景划分 Collection；函数调用与 FastAPI 网关协调教务系统、校历、社团资源的动作执行。</p>
+                        <ul>
+                            <li data-i18n="project.campusflow.tech.card1.item1">3000+ 文档切片，混合检索 (bm25 + 向量召回)</li>
+                            <li data-i18n="project.campusflow.tech.card1.item2">工具调度自动评估，利用 GPT-4 反馈微调提示词</li>
+                            <li data-i18n="project.campusflow.tech.card1.item3">调用任务采用异步队列，保障高峰期稳定性</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="timeline__item">
+                    <span class="timeline__date" data-i18n="project.campusflow.tech.card2.meta">MLOps</span>
+                    <div class="timeline__content">
+                        <h3 data-i18n="project.campusflow.tech.card2.title">评估 & 监控</h3>
+                        <p data-i18n="project.campusflow.tech.card2.desc">构建自动化对话回放与指标看板，闭环监控准确率、拒答率与偏差。</p>
+                        <ul>
+                            <li data-i18n="project.campusflow.tech.card2.item1">LangSmith + 自建标签体系进行语义评分</li>
+                            <li data-i18n="project.campusflow.tech.card2.item2">Airflow 定时回放真实对话，生成回归报告</li>
+                            <li data-i18n="project.campusflow.tech.card2.item3">Prometheus + Grafana 监控延迟与错误率</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--accent" id="links">
+            <div class="section__header">
+                <h2 data-i18n="project.common.resources">项目资源</h2>
+                <p data-i18n="project.campusflow.resources.subtitle">进一步了解 CampusFlow 的产品文档、技术实现与 Demo。</p>
+            </div>
+            <div class="contact">
+                <div class="contact__card">
+                    <h3 data-i18n="project.common.resourcesGithub">GitHub</h3>
+                    <a href="https://github.com/chenjia/campusflow-llm" target="_blank" rel="noreferrer">github.com/chenjia/campusflow-llm</a>
+                </div>
+                <div class="contact__card">
+                    <h3 data-i18n="project.common.resourcesDemo">Demo</h3>
+                    <a href="https://campusflow.streamlit.app" target="_blank" rel="noreferrer">campusflow.streamlit.app</a>
+                </div>
+                <div class="contact__card">
+                    <h3 data-i18n="project.common.resourcesReport">复盘</h3>
+                    <a href="https://chenjia.notion.site/campusflow-retro" target="_blank" rel="noreferrer">Notion Retro</a>
+                </div>
+            </div>
+            <p class="contact__note" data-i18n="project.common.contact">更多数据报告、用户调研细节可进一步交流分享。</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p data-i18n="footer.copyright">© 2024 Chen Jia · Designed & Built with ❤️ & GPT-4o mini</p>
+        <a class="footer__top" href="#top" data-i18n="footer.toTop">回到顶部</a>
+    </footer>
+
+    <script src="../assets/js/i18n.js" defer></script>
+    <script src="../assets/js/script.js" defer></script>
+</body>
+</html>

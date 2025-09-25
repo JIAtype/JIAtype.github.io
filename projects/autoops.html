@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="project.autoops.meta.title">AutoOps 时间序列监控 · 项目详情</title>
+    <meta name="description" content="AutoOps 时间序列监控平台项目详情，介绍异常检测、可解释性与运维场景落地。" data-i18n-attr-content="project.autoops.meta.description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-lang="zh" data-page="autoops">
+    <header class="site-header" id="top">
+        <nav class="nav">
+            <a class="nav__brand" href="../index.html" data-i18n="nav.brand">CJ.</a>
+            <button class="nav__toggle" aria-label="打开导航" data-i18n-attr-aria-label="nav.toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__list">
+                <li><a href="../index.html#about" data-i18n="nav.about">关于我</a></li>
+                <li><a href="../index.html#experience" data-i18n="nav.experience">经历</a></li>
+                <li><a href="../index.html#projects" data-i18n="nav.projects">项目</a></li>
+                <li><a href="../index.html#insights" data-i18n="nav.insights">行业洞察</a></li>
+                <li><a href="../index.html#contact" data-i18n="nav.contact">联系</a></li>
+            </ul>
+            <button class="nav__lang" id="languageToggle" data-i18n="nav.langToggle" aria-label="切换语言" data-i18n-attr-aria-label="nav.langToggleLabel">EN</button>
+        </nav>
+    </header>
+    <div class="lang-notice" data-i18n="notice.jsWarning">🌐 如果语言未自动切换，请开启浏览器 JavaScript。</div>
+
+    <main>
+        <section class="hero" id="overview">
+            <div class="hero__content">
+                <p class="hero__eyebrow" data-i18n="project.autoops.hero.eyebrow">AIOps · 时间序列预测</p>
+                <h1 data-i18n="project.autoops.hero.title">AutoOps 云监控预测与异常告警平台</h1>
+                <p class="hero__summary" data-i18n="project.autoops.hero.summary">结合 AutoML 与可解释模型，为 SRE 团队提供 GPU 指标预测与实时异常侦测，显著降低误报并提升故障响应效率。</p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="#links" data-i18n="project.common.heroCta">查看项目资源</a>
+                    <a class="btn" href="../index.html#projects" data-i18n="project.common.back">返回精选项目</a>
+                </div>
+                <ul class="hero__meta">
+                    <li><span data-i18n="project.common.heroRole">角色</span><strong data-i18n="project.autoops.hero.roleValue">数据科学实习生</strong></li>
+                    <li><span data-i18n="project.common.heroTime">时间</span><strong data-i18n="project.autoops.hero.timeValue">2021.07 — 2022.08</strong></li>
+                    <li><span data-i18n="project.autoops.hero.coverageLabel">覆盖范围</span><strong data-i18n="project.autoops.hero.coverageValue">20+ 企业客户 · 2,000+ 指标</strong></li>
+                </ul>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__card">
+                    <h2 data-i18n="project.autoops.hero.metrics.title">关键数据</h2>
+                    <ul>
+                        <li data-i18n="project.autoops.hero.metrics.item1">告警噪音下降 35%</li>
+                        <li data-i18n="project.autoops.hero.metrics.item2">预测准确度 (MAPE) 10.6%</li>
+                        <li data-i18n="project.autoops.hero.metrics.item3">节约 GPU 成本 12%</li>
+                        <li data-i18n="project.autoops.hero.metrics.item4">上线后 3 个月服务 180+ 告警策略</li>
+                    </ul>
+                </div>
+                <div class="hero__card hero__card--gradient">
+                    <p data-i18n="project.autoops.hero.quote">"AIOps 的价值，在于把预测与解释交到一线运维手中。"</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="impact">
+            <div class="section__header">
+                <h2 data-i18n="project.common.impact">结果与贡献</h2>
+                <p data-i18n="project.autoops.impact.subtitle">聚焦异常检测稳定性、可解释能力与业务落地。</p>
+            </div>
+            <div class="about__grid">
+                <div class="about__card">
+                    <h3 data-i18n="project.autoops.impact.card1.title">异常检测</h3>
+                    <ul>
+                        <li data-i18n="project.autoops.impact.card1.item1">引入 Prophet + LSTM 混合模型，自适应节假日与活动波动</li>
+                        <li data-i18n="project.autoops.impact.card1.item2">自监督对比学习识别冷启动与漂移场景</li>
+                        <li data-i18n="project.autoops.impact.card1.item3">异常分级策略减少 42% 非关键告警</li>
+                    </ul>
+                </div>
+                <div class="about__card">
+                    <h3 data-i18n="project.autoops.impact.card2.title">可解释性</h3>
+                    <ul>
+                        <li data-i18n="project.autoops.impact.card2.item1">Shapley 模块输出 Top-K 影响因子</li>
+                        <li data-i18n="project.autoops.impact.card2.item2">Grafana 插件提供 root cause drill-down</li>
+                        <li data-i18n="project.autoops.impact.card2.item3">建立“承诺-验证”机制记录运维反馈</li>
+                    </ul>
+                </div>
+                <div class="about__card">
+                    <h3 data-i18n="project.autoops.impact.card3.title">工程实践</h3>
+                    <ul>
+                        <li data-i18n="project.autoops.impact.card3.item1">使用 Kubeflow Pipelines 管理训练与部署</li>
+                        <li data-i18n="project.autoops.impact.card3.item2">Prometheus 指标接入 PagerDuty 自动化响应</li>
+                        <li data-i18n="project.autoops.impact.card3.item3">CI/CD 接入 GitOps，平均迭代周期缩短 30%</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="gallery">
+            <div class="section__header">
+                <h2 data-i18n="project.common.gallery">系统演示</h2>
+                <p data-i18n="project.autoops.gallery.subtitle">核心界面展示预测、告警与解释工作流。</p>
+            </div>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-card__media">
+                        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajM1eTN0dzN0OXhyY2Iya284aXAwMHdoMG10dTg2NDZsOWtrbzhvcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oFzlWc8Pp9Qy1Zf1W/giphy.gif" alt="预测曲线与阈值" data-i18n-attr-alt="project.autoops.gallery.card1.alt">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 data-i18n="project.autoops.gallery.card1.title">预测 + 告警配置</h3>
+                        <p data-i18n="project.autoops.gallery.card1.desc">展示预测区间、动态阈值与置信度评分，支持运维一键调优敏感度。</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__media">
+                        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3VoM28yanp2MWV5a3U1dDFmYTR6OW9vYXk5c3Y2YmV4Z3IyaGlvYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4EoTz2K0d8bJ6d4U/giphy.gif" alt="根因分析界面" data-i18n-attr-alt="project.autoops.gallery.card2.alt">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 data-i18n="project.autoops.gallery.card2.title">根因分析流程</h3>
+                        <p data-i18n="project.autoops.gallery.card2.desc">通过 SHAP 解释图 + 日志聚类，定位异常来源并同步到工单系统。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="stack">
+            <div class="section__header">
+                <h2 data-i18n="project.common.tech">技术实现</h2>
+                <p data-i18n="project.autoops.tech.subtitle">流程覆盖数据采集、特征工程、训练调度与在线推理。</p>
+            </div>
+            <div class="timeline">
+                <article class="timeline__item">
+                    <span class="timeline__date" data-i18n="project.autoops.tech.card1.meta">Pipeline</span>
+                    <div class="timeline__content">
+                        <h3 data-i18n="project.autoops.tech.card1.title">AutoML 训练流程</h3>
+                        <p data-i18n="project.autoops.tech.card1.desc">利用自研 AutoML 框架在 Kubeflow 上执行特征选择与模型训练，支持快速扩展到新指标。</p>
+                        <ul>
+                            <li data-i18n="project.autoops.tech.card1.item1">TSFresh + 自建指标库生成 120+ 特征</li>
+                            <li data-i18n="project.autoops.tech.card1.item2">模型候选包括 Prophet、TFT、LSTM、XGBoost</li>
+                            <li data-i18n="project.autoops.tech.card1.item3">自动模型组合与 stacking 提升 MAPE 7%</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="timeline__item">
+                    <span class="timeline__date" data-i18n="project.autoops.tech.card2.meta">Serving</span>
+                    <div class="timeline__content">
+                        <h3 data-i18n="project.autoops.tech.card2.title">在线推理与监控</h3>
+                        <p data-i18n="project.autoops.tech.card2.desc">采用 FastAPI + Celery 构建实时推理服务，Prometheus 采集指标并进行异常告警。</p>
+                        <ul>
+                            <li data-i18n="project.autoops.tech.card2.item1">Redis 作消息队列，支持批量推理</li>
+                            <li data-i18n="project.autoops.tech.card2.item2">OpenTelemetry 追踪跨服务延迟</li>
+                            <li data-i18n="project.autoops.tech.card2.item3">与 PagerDuty 集成，异常即刻通知值班人员</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--accent" id="links">
+            <div class="section__header">
+                <h2 data-i18n="project.common.resources">项目资源</h2>
+                <p data-i18n="project.autoops.resources.subtitle">深入了解 AutoOps 的代码、报告与演示。</p>
+            </div>
+            <div class="contact">
+                <div class="contact__card">
+                    <h3 data-i18n="project.common.resourcesGithub">GitHub</h3>
+                    <a href="https://github.com/chenjia/autoops" target="_blank" rel="noreferrer">github.com/chenjia/autoops</a>
+                </div>
+                <div class="contact__card">
+                    <h3 data-i18n="project.autoops.resources.demo">Demo</h3>
+                    <a href="https://youtu.be/autoops-demo" target="_blank" rel="noreferrer">YouTube Demo</a>
+                </div>
+                <div class="contact__card">
+                    <h3 data-i18n="project.common.resourcesReport">复盘</h3>
+                    <a href="https://chenjia.notion.site/autoops-whitepaper" target="_blank" rel="noreferrer">Notion Whitepaper</a>
+                </div>
+            </div>
+            <p class="contact__note" data-i18n="project.common.contact">可提供更详细的实验日志与监控数据进行复审。</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p data-i18n="footer.copyright">© 2024 Chen Jia · Designed & Built with ❤️ & GPT-4o mini</p>
+        <a class="footer__top" href="#top" data-i18n="footer.toTop">回到顶部</a>
+    </footer>
+
+    <script src="../assets/js/i18n.js" defer></script>
+    <script src="../assets/js/script.js" defer></script>
+</body>
+</html>

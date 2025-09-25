@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>陈佳 · AI 应用科学家</title>
-    <meta name="description" content="陈佳，AI 专业硕士生，专注于机器学习工程、数据产品与多模态应用。">
+    <title data-i18n="meta.title">陈佳 · AI 应用科学家</title>
+    <meta name="description" content="陈佳，AI 专业硕士生，专注于机器学习工程、数据产品与多模态应用。" data-i18n-attr-content="meta.description">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body data-lang="zh" data-page="home">
+    <!-- <div class="lang-notice" data-i18n="notice.jsWarning">🌐 如果语言未自动切换，请开启浏览器 JavaScript。</div> -->
     <header class="site-header" id="top">
         <nav class="nav">
-            <a class="nav__brand" href="#top">CJ.</a>
-            <button class="nav__toggle" aria-label="打开导航">
+            <a class="nav__brand" href="#top" data-i18n="nav.brand">CJ.</a>
+            <button class="nav__toggle" aria-label="打开导航" data-i18n-attr-aria-label="nav.toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav__list">
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#experience">经历</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#insights">行业洞察</a></li>
-                <li><a href="#contact">联系</a></li>
+                <li><a href="#about" data-i18n="nav.about">关于我</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">经历</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">项目</a></li>
+                <li><a href="#insights" data-i18n="nav.insights">行业洞察</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">联系</a></li>
             </ul>
+            <button class="nav__lang" id="languageToggle" data-i18n="nav.langToggle" aria-label="切换语言" data-i18n-attr-aria-label="nav.langToggleLabel">EN</button>
         </nav>
     </header>
 
@@ -34,15 +36,15 @@
             <div class="hero__content">
                 <p class="hero__eyebrow">AI 应用科学家 · 机器学习工程师</p>
                 <h1 id="hero-title">你好，我是陈佳。</h1>
-                <p class="hero__summary">正在攻读 AI 专业硕士，专注于多模态模型落地、LLM 产品化与数据科学工作流自动化。热衷用数据驱动业务价值，并打造面向生产的智能应用。</p>
+                <p class="hero__summary">正在攻读 新加坡国立大学 AI 专业硕士，专注于多模态模型落地、LLM 产品化与数据科学工作流自动化。热衷用数据驱动业务价值，并打造面向生产的智能应用。</p>
                 <div class="hero__actions">
-                    <a class="btn btn--primary" href="mailto:chenjia.ai@outlook.com">联系我</a>
-                    <a class="btn" href="#projects">看看项目</a>
+                    <a class="btn btn--primary" href="mailto:chenjia.ai@outlook.com" data-i18n="hero.ctaPrimary">联系我</a>
+                    <a class="btn" href="#projects" data-i18n="hero.ctaSecondary">看看项目</a>
                 </div>
                 <ul class="hero__meta">
-                    <li><span>目前所在地</span><strong>上海</strong></li>
-                    <li><span>求职方向</span><strong>AI 应用科学 / 数据产品 / 机器学习工程</strong></li>
-                    <li><span>开放时间</span><strong>2024 年 7 月起</strong></li>
+                    <li><span>期待工作地</span><strong>中国·陕西·西安</strong></li>
+                    <li><span data-i18n="hero.meta.roleLabel">求职方向</span><strong>AI 应用科学 / 具身智能 / 算法</strong></li>
+                    <li><span data-i18n="hero.meta.timeLabel">毕业时间</span><strong>2025 年 11 月起</strong></li>
                 </ul>
                 <div class="hero__socials">
                     <a href="https://github.com/chenjia" target="_blank" rel="noreferrer">GitHub</a>
@@ -52,43 +54,43 @@
             </div>
             <div class="hero__visual">
                 <div class="hero__card">
-                    <h2>技术快照</h2>
+                    <h2 data-i18n="hero.snapshot.title">技术快照</h2>
                     <ul>
                         <li>Python · PyTorch · TensorFlow</li>
-                        <li>LLM Fine-tuning · RAG 架构</li>
-                        <li>数据工程 · MLOps Automation</li>
+                        <li>LLM Fine-tuning · YOLO </li>
+                        <li>TurtleBot3 实体机器人 · ROS · SLAM</li>
                         <li>产品指标驱动 · 快速迭代</li>
                     </ul>
                 </div>
                 <div class="hero__card hero__card--gradient">
-                    <p>"数据 + 创造力 = 持续产生业务影响的 AI 产品。"</p>
+                    <p data-i18n="hero.quote">"数据 + 创造力 = 持续产生业务影响的 AI 产品。"</p>
                 </div>
             </div>
         </section>
 
         <section class="section" id="about">
             <div class="section__header">
-                <h2>关于我</h2>
-                <p>我喜欢把复杂的模型转化成人人都能受益的产品体验。</p>
+                <h2 data-i18n="about.title">关于我</h2>
+                <p data-i18n="about.subtitle">我喜欢把复杂的模型转化成人人都能受益的产品体验。</p>
             </div>
             <div class="about__grid">
                 <div class="about__card">
-                    <h3>核心优势</h3>
+                    <h3 data-i18n="about.strengths.title">核心优势</h3>
                     <ul>
-                        <li>将 LLM 与业务流程结合，设计端到端的数据策略</li>
+                        <li>将 AI 与业务流程结合，设计端到端的产品策略</li>
                         <li>快速验证模型效果，迭代出可落地的 MVP</li>
                         <li>拥有产品思维，善于与跨职能团队沟通协作</li>
                     </ul>
                 </div>
                 <div class="about__card">
-                    <h3>技术栈</h3>
+                    <h3 data-i18n="about.stack.title">技术栈</h3>
                     <div class="tag-list">
                         <span>Python</span>
                         <span>PyTorch</span>
                         <span>LangChain</span>
                         <span>FastAPI</span>
                         <span>Docker</span>
-                        <span>Airflow</span>
+                        <span>GitHub</span>
                         <span>Snowflake</span>
                         <span>dbt</span>
                         <span>Streamlit</span>
@@ -96,11 +98,11 @@
                     </div>
                 </div>
                 <div class="about__card">
-                    <h3>获奖 / 证书</h3>
+                    <h3>实习 / 项目</h3>
                     <ul>
-                        <li>2023 年微软 Azure AI 黑客松全国二等奖</li>
-                        <li>Google Cloud ML Engineer 专项证书</li>
-                        <li>发表 2 篇 A 类会议论文（CVPR Workshop / NeurIPS Datasets Track）</li>
+                        <li>视觉感知与工业场景落地，多模态交互与行为分析</li>
+                        <li>大模型与自动化流程，数据驱动与根因分析</li>
+                        <li>实体机器人系统开发，机械臂抓取任务</li>
                     </ul>
                 </div>
             </div>
@@ -108,41 +110,30 @@
 
         <section class="section" id="experience">
             <div class="section__header">
-                <h2>教育与实习经历</h2>
+                <h2>教育背景</h2>
                 <p>交叉背景让我的 AI 产品落地能力拥有更扎实的业务洞察。</p>
             </div>
             <div class="timeline">
                 <article class="timeline__item">
-                    <span class="timeline__date">2022.09 — 2024.06</span>
+                    <span class="timeline__date">2023.08 — 2025.11</span>
                     <div class="timeline__content">
-                        <h3>AI 工程硕士 · 上海交通大学</h3>
-                        <p>GPA 3.8/4.0 · 主修机器学习系统、数据挖掘、云原生架构。担任 AI 创新实验室研究助理，探索多模态与人体行为理解。</p>
-                        <ul>
-                            <li>论文：Egocentric Multimodal Interaction (CVPR Workshop 2023)</li>
-                            <li>学生团队负责人：构建校园智能导览 LLM 助手，日活 1.2K</li>
-                        </ul>
+                        <h3>AI 工程硕士 · 新加坡国立大学</h3>
+                        <p>主修机器推理、模式识别和机器学习、智能感知和感知建构、文本分析、自主机器人与交通工具、人机系统工程等。</p>
+                        <!-- <ul> -->
+                            <!-- <li data-i18n="experience.edu.item1">论文：Egocentric Multimodal Interaction (CVPR Workshop 2023)</li>
+                            <li data-i18n="experience.edu.item2">学生团队负责人：构建校园智能导览 LLM 助手，日活 1.2K</li> -->
+                        <!-- </ul> -->
                     </div>
                 </article>
                 <article class="timeline__item">
-                    <span class="timeline__date">2023.06 — 2023.09</span>
+                    <span class="timeline__date">2018.09 — 2022.6</span>
                     <div class="timeline__content">
-                        <h3>AI 产品实习生 · 字节跳动</h3>
-                        <p>参与企业知识库问答产品，负责基于 LLM 的语义检索与评估体系搭建。</p>
-                        <ul>
-                            <li>设计 RAG Pipeline，召回准确率提升 21%</li>
-                            <li>构建自动化评估框架，单轮测试时间缩短 60%</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="timeline__item">
-                    <span class="timeline__date">2021.07 — 2022.08</span>
-                    <div class="timeline__content">
-                        <h3>数据科学实习生 · 腾讯云</h3>
-                        <p>负责云监控日志异常检测项目，构建时间序列预测 + 自监督异常检测模型。</p>
-                        <ul>
-                            <li>为 AIOps 团队提供可解释告警控制台，报警噪音下降 35%</li>
-                            <li>落地 GPU 指标预测服务，节约 12% 计算成本</li>
-                        </ul>
+                        <h3>软件工程 工程学士 · 中北大学</h3>
+                        <p>主修程序设计基础、数据结构与算法、数据库概论、网页设计与建设、大数据分析与应用、数据仓库与数据挖掘等。</p>
+                        <!-- <ul> -->
+                            <!-- <li data-i18n="experience.edu.item1">论文：Egocentric Multimodal Interaction (CVPR Workshop 2023)</li>
+                            <li data-i18n="experience.edu.item2">学生团队负责人：构建校园智能导览 LLM 助手，日活 1.2K</li> -->
+                        <!-- </ul> -->
                     </div>
                 </article>
             </div>
@@ -150,128 +141,222 @@
 
         <section class="section" id="projects">
             <div class="section__header">
-                <h2>精选项目</h2>
-                <p>自驱学习 + 快速迭代，让原型在两周内上线并获取真实数据验证。</p>
+                <h2 data-i18n="projects.title">实习/小组项目</h2>
+                <p >自驱学习 + 快速迭代，让原型快速上线并获取真实数据验证。</p>
             </div>
             <div class="projects">
-                <article class="project-card">
-                    <div class="project-card__media">
-                        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2QxYW8zMXludDNqNDkzZWppeWVhbDZvMG10eWlqdWRlbWpmNGZzMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6Zt8zk9vP0S5qWdK/giphy.gif" alt="LLM 智能助理动图">
-                    </div>
-                    <div class="project-card__body">
-                        <h3>CampusFlow LLM 助手</h3>
-                        <p>为高校打造的一站式知识问答助手，结合 GPT-4 + 校园知识库，支持课程匹配、行政流程导航、实时日程提醒。</p>
-                        <ul class="project-card__highlights">
-                            <li>LangChain + Weaviate 构建 RAG 框架，实现上下文感知推理</li>
-                            <li>引入函数调用模式，完成与教务系统 API 的闭环任务</li>
-                            <li>上线后 3 周内累积对话 15k+，满意度 4.7/5</li>
-                        </ul>
-                        <div class="project-card__links">
-                            <a href="https://github.com/chenjia/campusflow-llm" target="_blank" rel="noreferrer">GitHub 源码</a>
-                            <a href="https://campusflow.streamlit.app" target="_blank" rel="noreferrer">Streamlit Demo</a>
-                        </div>
-                    </div>
-                </article>
 
-                <article class="project-card">
+                <a class="project-card" href="projects/none.html" aria-label="智能移动垃圾桶 - 实体机器人系统开发">
                     <div class="project-card__media">
-                        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXBmajczNndvdHR0N2I4YzRxdHg5cnIzeWN4cGszYTAxZTExNzR1ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0MYt5jPR6QX5pnqM/giphy.gif" alt="多模态检索动图">
+                        <img src="assets/img/bin1.gif" alt="智能动图">
                     </div>
                     <div class="project-card__body">
-                        <h3>InsightLens 多模态检索</h3>
-                        <p>面向营销团队的海量素材检索平台，支持文案 + 图片混合搜索与热点分析。</p>
+                        <h3>智能移动垃圾桶 - 实体机器人系统开发</h3>
+                        <p>面向室内复杂场景的自主移动机器人系统，实现 “自主导航 - 避障 - 垃圾分类 - 远程管理” 一体化。</p>
                         <ul class="project-card__highlights">
-                            <li>CLIP + BLIP2 组合模型，支持跨模态语义对齐</li>
-                            <li>Serverless GPU 推理，响应时间 < 400ms</li>
-                            <li>构建可视化看板，贡献 18% 素材复用率提升</li>
+                            <li>基于ROS（机器人操作系统） 与 SLAM 技术部署 TurtleBot3 机器人</li>
+                            <li>实现机器人在室内动态环境下的自主导航与避障</li>
+                            <li>集成多传感器（视觉 / 红外），通过 TCP/IP 协议实现传感器数据实时传输与远程监控</li>
                         </ul>
                         <div class="project-card__links">
-                            <a href="https://github.com/chenjia/insightlens" target="_blank" rel="noreferrer">GitHub 源码</a>
+                            <span>GitHub 源码 ↗</span>
                         </div>
                     </div>
-                </article>
+                </a>
 
-                <article class="project-card">
+                <a class="project-card" href="projects/none.html" aria-label="智能开发">
                     <div class="project-card__media">
-                        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajM1eTN0dzN0OXhyY2Iya284aXAwMHdoMG10dTg2NDZsOWtrbzhvcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oFzlWc8Pp9Qy1Zf1W/giphy.gif" alt="AutoML Demo">
+                        <img src="assets/img/tt1.png" alt="智能动图">
                     </div>
                     <div class="project-card__body">
-                        <h3>AutoOps 时间序列监控</h3>
-                        <p>结合 AutoML 与可解释模型的云监控预测平台，面向 SRE 团队提供实时异常告警。</p>
+                        <h3>机械臂抓取任务实践</h3>
+                        <p>探索强化学习在具身智能机器人 “物体操纵” 中的应用，在仿真环境中模拟后实现机械臂对不规则物体的自主抓取。</p>
                         <ul class="project-card__highlights">
-                            <li>Prophet + LSTM 混合模型，自动调参</li>
-                            <li>Shapley 可解释模块，帮助运维定位根因</li>
-                            <li>Grafana 插件集成，服务 20+ 企业客户</li>
+                            <li>基于 PyTorch+Gazebo+MoveIt! 构建机械臂仿真平台</li>
+                            <li>选用 TurtleBot3 with OpenManipulator-X 机械臂模型，场景包含桌子、不规则物体（圆柱形直筒）</li>
+                            <li>设计机械臂关节速度控制、 gripper 开合指令等</li>
                         </ul>
                         <div class="project-card__links">
-                            <a href="https://github.com/chenjia/autoops" target="_blank" rel="noreferrer">GitHub 源码</a>
+                            <span>GitHub 源码 ↗</span>
                         </div>
                     </div>
-                </article>
+                </a>
+
+                <a class="project-card" href="projects/none.html" aria-label="智能开发">
+                    <div class="project-card__media">
+                        <img src="assets/img/worker.gif" alt="智能动图">
+                    </div>
+                    <div class="project-card__body">
+                        <h3>安防行为检测系统 - 视觉感知与工业场景落地</h3>
+                        <p>实时识别 “人员摔倒”“未佩戴安全帽” 等高风险行为并触发预警。</p>
+                        <ul class="project-card__highlights">
+                            <li>集成YOLOv8 姿态估计 + 物体检测 + Flask Web 服务 + OPC UA 通讯</li>
+                            <li>实现视觉感知、行为理解与设备联动的闭环</li>
+                            <li>多模态算法融合，行为分析与场景交互</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <span>GitHub 源码 ↗</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-card" href="projects/none.html" aria-label="智能开发">
+                    <div class="project-card__media">
+                        <img src="assets/img/cv1.png" alt="智能动图">
+                    </div>
+                    <div class="project-card__body">
+                        <h3> 零件表面缺陷检测系统 </h3>
+                        <p>低成本实时检测，精准分类零件表面缺陷，减少人工检验工作量。</p>
+                        <ul class="project-card__highlights">
+                            <li>LableMe真实零件数据集标注，基于真实零件缺陷数据集微调 YOLO 模型</li>
+                            <li>结合 OPC UA 工业协议部署至 Raspberry Pi 终端</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <span>GitHub 源码 ↗</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-card" href="projects/none.html" aria-label="智能开发">
+                    <div class="project-card__media">
+                        <img src="assets/img/llm1.png" alt="智能动图">
+                    </div>
+                    <div class="project-card__body">
+                        <h3> 大模型调用与自动化流程 </h3>
+                        <p>灵活利用大模型，处理重复可优化工作流程，提升办公效率。</p>
+                        <ul class="project-card__highlights">
+                            <li>基于 Dify 构建全自动发票处理系统，集成开源 LLMs 并通过 Prompt 迭代优化，实现发票关键信息（编号 / 金额 / 供应商）自动提取与数据库 API 写入</li>
+                            <li>调用 Gemini API（语言大模型）结合 OpenCV（视觉处理），将车间视频素材自动提取关键帧、识别设备文字信息，生成多语言（中 / 英 / 马来）图文文档</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <span>GitHub 源码 ↗</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-card" href="projects/none.html" aria-label="智能开发">
+                    <div class="project-card__media">
+                        <img src="assets/img/llm2.gif" alt="智能动图">
+                    </div>
+                    <div class="project-card__body">
+                        <h3> YouTube视频评论分析平台 - 多模态大模型与 NLP 应用 </h3>
+                        <p>基于语言大模型开发多模态分析平台，解决内容创作者 “用户反馈洞察难” 问题，实现 YouTube 评论的主题建模、情感分析与垃圾评论过滤。</p>
+                        <ul class="project-card__highlights">
+                            <li>爬取海量 YouTube 评论数据，收集原始数据集</li>
+                            <li>基于 Fine-tuned RoBERTa、BART 等大模型</li>
+                            <li>实现主题建模、细粒度实体情感分析、垃圾评论分类</li>
+                            <li>通过 Streamlit 构建可视化界面，帮助创作者洞察用户反馈</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <span>GitHub 源码 ↗</span>
+                            <span>Streamlit Demo ↗</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-card" href="projects/none.html" aria-label="智能开发">
+                    <div class="project-card__media">
+                        <img src="assets/img/da1.gif" alt="智能动图">
+                    </div>
+                    <div class="project-card__body">
+                        <h3> 消费者分析与行为预测 - 数据驱动决策 </h3>
+                        <p>开发端到端 AI 驱动的数据分析平台，洞察商场消费数据。</p>
+                        <ul class="project-card__highlights">
+                            <li>通过分析消费数据以及 EDA 预处理后，运用决策树, K-Means, 遗传算法, DWA算法等技术</li>
+                            <li>实现多维客户细分、构建消费者画像、高价值客户识别、会员收入分析、峰值销售检测、智能推荐及库存优化等功能。</li>
+                            <li>通过 Streamlit 实现可交互数据可视化，生动展示分析报告及预测功能。</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <span>GitHub 源码 ↗</span>
+                            <span>Streamlit Demo ↗</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- <a class="project-card" href="projects/none.html" aria-label="智能开发">
+                    <div class="project-card__media">
+                        <img src="assets/img/bin1.gif" alt="智能动图">
+                    </div>
+                    <div class="project-card__body">
+                        <h3> 标题 </h3>
+                        <p>介绍。</p>
+                        <ul class="project-card__highlights">
+                            <li>123</li>
+                            <li>123</li>
+                            <li>123</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <span>GitHub 源码 ↗</span>
+                            <span>Streamlit Demo ↗</span>
+                        </div>
+                    </div>
+                </a> -->
+
             </div>
         </section>
 
         <section class="section section--accent" id="insights">
             <div class="section__header">
-                <h2>行业洞察 · 最近在关注</h2>
-                <p>每周整理值得关注的论文、开源项目与业界动态，强化学习节奏。</p>
+                <h2 data-i18n="insights.title">行业洞察 · 最近在关注</h2>
+                <p data-i18n="insights.subtitle">每周整理值得关注的论文、开源项目与业界动态，强化学习节奏。</p>
             </div>
             <div class="insights">
                 <article class="insight-card">
                     <div class="insight-card__meta">
-                        <span>2024.05 · 论文</span>
+                        <span data-i18n="insights.card1.meta">2024.05 · 论文</span>
                         <a href="https://arxiv.org/abs/2405.01234" target="_blank" rel="noreferrer">arXiv</a>
                     </div>
-                    <h3>Align-Any-Agent：面向企业知识库的多工具协同代理框架</h3>
-                    <p>关注如何通过自动化合成多轮对话数据完成工具调度的偏差校正。</p>
+                    <h3 data-i18n="insights.card1.title">Align-Any-Agent：面向企业知识库的多工具协同代理框架</h3>
+                    <p data-i18n="insights.card1.desc">关注如何通过自动化合成多轮对话数据完成工具调度的偏差校正。</p>
                 </article>
                 <article class="insight-card">
                     <div class="insight-card__meta">
-                        <span>2024.05 · 开源</span>
+                        <span data-i18n="insights.card2.meta">2024.05 · 开源</span>
                         <a href="https://github.com/meta-llama/llama3" target="_blank" rel="noreferrer">GitHub</a>
                     </div>
-                    <h3>Llama 3 模型开源路线</h3>
-                    <p>追踪 Instruct 与 Function 调用能力的更新，为企业内部对话式 Agent 做预研。</p>
+                    <h3 data-i18n="insights.card2.title">Llama 3 模型开源路线</h3>
+                    <p data-i18n="insights.card2.desc">追踪 Instruct 与 Function 调用能力的更新，为企业内部对话式 Agent 做预研。</p>
                 </article>
                 <article class="insight-card">
                     <div class="insight-card__meta">
-                        <span>2024.04 · 产业</span>
+                        <span data-i18n="insights.card3.meta">2024.04 · 产业</span>
                         <a href="https://www.sequoiacap.com" target="_blank" rel="noreferrer">Sequoia</a>
                     </div>
-                    <h3>大模型落地的“二八法则”</h3>
-                    <p>记录红杉 Capital 针对企业落地大模型的实践报告，提炼 3 个业务优先级模型。</p>
+                    <h3 data-i18n="insights.card3.title">大模型落地的“二八法则”</h3>
+                    <p data-i18n="insights.card3.desc">记录红杉 Capital 针对企业落地大模型的实践报告，提炼 3 个业务优先级模型。</p>
                 </article>
             </div>
         </section>
 
         <section class="section section--contact" id="contact">
             <div class="section__header">
-                <h2>保持联系</h2>
-                <p>正在寻找全职或暑期实习机会，欢迎邮件或 LinkedIn 联系。</p>
+                <h2 data-i18n="contact.title">保持联系</h2>
+                <p data-i18n="contact.subtitle">正在寻找全职或暑期实习机会，欢迎邮件或 LinkedIn 联系。</p>
             </div>
             <div class="contact">
                 <div class="contact__card">
-                    <h3>邮箱</h3>
+                    <h3 data-i18n="contact.emailLabel">邮箱</h3>
                     <a href="mailto:chenjia.ai@outlook.com">chenjia.ai@outlook.com</a>
                 </div>
                 <div class="contact__card">
-                    <h3>LinkedIn</h3>
+                    <h3 data-i18n="contact.linkedinLabel">LinkedIn</h3>
                     <a href="https://www.linkedin.com/in/chenjia" target="_blank" rel="noreferrer">linkedin.com/in/chenjia</a>
                 </div>
                 <div class="contact__card">
-                    <h3>GitHub</h3>
+                    <h3 data-i18n="contact.githubLabel">GitHub</h3>
                     <a href="https://github.com/chenjia" target="_blank" rel="noreferrer">github.com/chenjia</a>
                 </div>
             </div>
-            <p class="contact__note">想了解更多项目细节？我很乐意分享 Demo、评估报告或设计文档。</p>
+            <p class="contact__note" data-i18n="contact.note">想了解更多项目细节？我很乐意分享 Demo、评估报告或设计文档。</p>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>© 2024 Chen Jia · Designed & Built with ❤️ & GPT-4o mini</p>
-        <a class="footer__top" href="#top">回到顶部</a>
+        <p data-i18n="footer.copyright">© 2024 Chen Jia · Designed & Built with ❤️ & GPT-4o mini</p>
+        <a class="footer__top" href="#top" data-i18n="footer.toTop">回到顶部</a>
     </footer>
 
+    <script src="assets/js/i18n.js" defer></script>
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>

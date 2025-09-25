@@ -54,3 +54,21 @@ const sectionObserver = new IntersectionObserver(
 );
 
 sections.forEach((section) => sectionObserver.observe(section));
+
+const smoothScrollToTop = () => {
+    if ('scrollBehavior' in document.documentElement.style) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        window.scrollTo(0, 0);
+    }
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
+
+const backToTopLinks = document.querySelectorAll('a[href="#top"], .footer__top');
+backToTopLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        smoothScrollToTop();
+    });
+});
