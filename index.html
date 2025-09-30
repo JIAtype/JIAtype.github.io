@@ -145,8 +145,7 @@
                 <p data-i18n="projects.subtitle">自驱学习 + 快速迭代，让原型快速上线并获取真实数据验证。</p>
             </div>
             <div class="projects">
-
-                <a class="project-card" href="projects/none.html" aria-label="智能移动垃圾桶 - 实体机器人系统开发" data-i18n-attr-aria-label="projects.smartBin.aria">
+                <div class="project-card" aria-label="智能移动垃圾桶 - 实体机器人系统开发" data-i18n-attr-aria-label="projects.smartBin.aria">
                     <div class="project-card__media">
                         <img src="assets/img/bin1.gif" alt="智能动图" data-i18n-attr-alt="projects.smartBin.alt">
                     </div>
@@ -154,35 +153,17 @@
                         <h3 data-i18n="projects.smartBin.title">智能移动垃圾桶 - 实体机器人系统开发</h3>
                         <p data-i18n="projects.smartBin.desc">面向室内复杂场景的自主移动机器人系统，实现 “自主导航 - 避障 - 垃圾分类 - 远程管理” 一体化。</p>
                         <ul class="project-card__highlights">
-                            <li data-i18n="projects.smartBin.item1">基于ROS（机器人操作系统） 与 SLAM 技术部署 TurtleBot3 机器人</li>
+                            <li data-i18n="projects.smartBin.item1">基于ROS 与 SLAM 技术部署 TurtleBot3 机器人</li>
                             <li data-i18n="projects.smartBin.item2">实现机器人在室内动态环境下的自主导航与避障</li>
-                            <li data-i18n="projects.smartBin.item3">集成多传感器（视觉 / 红外），通过 TCP/IP 协议实现传感器数据实时传输与远程监控</li>
+                            <li data-i18n="projects.smartBin.item3">集成多传感器，TCP/IP 协议实时传输与监控</li>
                         </ul>
                         <div class="project-card__links">
-                            <span data-i18n="projects.smartBin.repo">GitHub 源码 ↗</span>
+                            <a href="https://github.com/JIAtype/Smart-Waste-Bin.git" target="_blank" rel="noopener noreferrer" data-i18n="projects.roboticArm.repo">GitHub 源码 ↗</a>
                         </div>
                     </div>
-                </a>
+                </div>
 
-                <a class="project-card" href="projects/none.html" aria-label="智能开发" data-i18n-attr-aria-label="projects.roboticArm.aria">
-                    <div class="project-card__media">
-                        <img src="assets/img/tt1.png" alt="智能动图" data-i18n-attr-alt="projects.roboticArm.alt">
-                    </div>
-                    <div class="project-card__body">
-                        <h3 data-i18n="projects.roboticArm.title">机械臂抓取任务实践</h3>
-                        <p data-i18n="projects.roboticArm.desc">探索强化学习在具身智能机器人 “物体操纵” 中的应用，在仿真环境中模拟后实现机械臂对不规则物体的自主抓取。</p>
-                        <ul class="project-card__highlights">
-                            <li data-i18n="projects.roboticArm.item1">基于 PyTorch+Gazebo+MoveIt! 构建机械臂仿真平台</li>
-                            <li data-i18n="projects.roboticArm.item2">选用 TurtleBot3 with OpenManipulator-X 机械臂模型，场景包含桌子、不规则物体（圆柱形直筒）</li>
-                            <li data-i18n="projects.roboticArm.item3">设计机械臂关节速度控制、 gripper 开合指令等</li>
-                        </ul>
-                        <div class="project-card__links">
-                            <span data-i18n="projects.roboticArm.repo">GitHub 源码 ↗</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="project-card" href="projects/none.html" aria-label="智能开发" data-i18n-attr-aria-label="projects.safetyVision.aria">
+                <div class="project-card" aria-label="智能开发" data-i18n-attr-aria-label="projects.safetyVision.aria">
                     <div class="project-card__media">
                         <img src="assets/img/worker.gif" alt="智能动图" data-i18n-attr-alt="projects.safetyVision.alt">
                     </div>
@@ -195,12 +176,13 @@
                             <li data-i18n="projects.safetyVision.item3">多模态算法融合，行为分析与场景交互</li>
                         </ul>
                         <div class="project-card__links">
-                            <span data-i18n="projects.safetyVision.repo">GitHub 源码 ↗</span>
+                            <!-- <span data-i18n="projects.safetyVision.repo">GitHub 源码 ↗</span> -->
+                            <a href="https://github.com/JIAtype/Intelligrnt-Factory-Safety-Monitoring" target="_blank" rel="noopener noreferrer" data-i18n="projects.roboticArm.repo">GitHub 源码 ↗</a>
                         </div>
                     </div>
-                </a>
+                </div>
 
-                <a class="project-card" href="projects/none.html" aria-label="智能开发" data-i18n-attr-aria-label="projects.defect.aria">
+                <div class="project-card" aria-label="智能开发" data-i18n-attr-aria-label="projects.defect.aria">
                     <div class="project-card__media">
                         <img src="assets/img/cv1.png" alt="智能动图" data-i18n-attr-alt="projects.defect.alt">
                     </div>
@@ -211,13 +193,14 @@
                             <li data-i18n="projects.defect.item1">LableMe真实零件数据集标注，基于真实零件缺陷数据集微调 YOLO 模型</li>
                             <li data-i18n="projects.defect.item2">结合 OPC UA 工业协议部署至 Raspberry Pi 终端</li>
                         </ul>
-                        <div class="project-card__links">
+                        <!-- <div class="project-card__links">
                             <span data-i18n="projects.defect.repo">GitHub 源码 ↗</span>
-                        </div>
+                            <a href="https://github.com/JIAtype/Intelligrnt-Factory-Safety-Monitoring" target="_blank" rel="noopener noreferrer" data-i18n="projects.roboticArm.repo">GitHub 源码 ↗</a>
+                        </div> -->
                     </div>
-                </a>
+                </div>
 
-                <a class="project-card" href="projects/none.html" aria-label="智能开发" data-i18n-attr-aria-label="projects.automation.aria">
+                <div class="project-card" aria-label="智能开发" data-i18n-attr-aria-label="projects.automation.aria">
                     <div class="project-card__media">
                         <img src="assets/img/llm1.png" alt="智能动图" data-i18n-attr-alt="projects.automation.alt">
                     </div>
@@ -228,13 +211,13 @@
                             <li data-i18n="projects.automation.item1">基于 Dify 构建全自动发票处理系统，集成开源 LLMs 并通过 Prompt 迭代优化，实现发票关键信息（编号 / 金额 / 供应商）自动提取与数据库 API 写入</li>
                             <li data-i18n="projects.automation.item2">调用 Gemini API（语言大模型）结合 OpenCV（视觉处理），将车间视频素材自动提取关键帧、识别设备文字信息，生成多语言（中 / 英 / 马来）图文文档</li>
                         </ul>
-                        <div class="project-card__links">
+                        <!-- <div class="project-card__links">
                             <span data-i18n="projects.automation.repo">GitHub 源码 ↗</span>
-                        </div>
+                        </div> -->
                     </div>
-                </a>
+                </div>
 
-                <a class="project-card" href="projects/none.html" aria-label="智能开发" data-i18n-attr-aria-label="projects.youtube.aria">
+                <div class="project-card" aria-label="智能开发" data-i18n-attr-aria-label="projects.youtube.aria">
                     <div class="project-card__media">
                         <img src="assets/img/llm2.gif" alt="智能动图" data-i18n-attr-alt="projects.youtube.alt">
                     </div>
@@ -248,13 +231,14 @@
                             <li data-i18n="projects.youtube.item4">通过 Streamlit 构建可视化界面，帮助创作者洞察用户反馈</li>
                         </ul>
                         <div class="project-card__links">
-                            <span data-i18n="projects.youtube.repo">GitHub 源码 ↗</span>
-                            <span data-i18n="projects.youtube.demo">Streamlit Demo ↗</span>
+                            <!-- <span data-i18n="projects.youtube.repo">GitHub 源码 ↗</span> -->
+                            <a href="https://github.com/JIAtype/IRS-PM-2024-GRP3-XSELL/tree/main" target="_blank" rel="noopener noreferrer" data-i18n="projects.roboticArm.repo">GitHub 源码 ↗</a>
+                            <a href="https://irsgroup3-bykhwbgdczbhvd3zyfezlc.streamlit.app/" target="_blank" rel="noopener noreferrer" data-i18n="projects.youtube.demo">Streamlit Demo ↗</a>
                         </div>
                     </div>
-                </a>
+                </div>
 
-                <a class="project-card" href="projects/none.html" aria-label="智能开发" data-i18n-attr-aria-label="projects.consumer.aria">
+                <div class="project-card" aria-label="智能开发" data-i18n-attr-aria-label="projects.consumer.aria">
                     <div class="project-card__media">
                         <img src="assets/img/da1.gif" alt="智能动图" data-i18n-attr-alt="projects.consumer.alt">
                     </div>
@@ -267,12 +251,32 @@
                             <li data-i18n="projects.consumer.item3">通过 Streamlit 实现可交互数据可视化，生动展示分析报告及预测功能。</li>
                         </ul>
                         <div class="project-card__links">
-                            <span data-i18n="projects.consumer.repo">GitHub 源码 ↗</span>
-                            <span data-i18n="projects.consumer.demo">Streamlit Demo ↗</span>
+                            <a href="https://github.com/JIAtype/IRS-PM-2024-GRP3-XSELL/tree/main" target="_blank" rel="noopener noreferrer" data-i18n="projects.roboticArm.repo">GitHub 源码 ↗</a>
+                            <a href="https://irsgroup3-bykhwbgdczbhvd3zyfezlc.streamlit.app/" target="_blank" rel="noopener noreferrer" data-i18n="projects.youtube.demo">Streamlit Demo ↗</a>
+                            <!-- <span data-i18n="projects.consumer.repo">GitHub 源码 ↗</span>
+                            <span data-i18n="projects.consumer.demo">Streamlit Demo ↗</span> -->
                         </div>
                     </div>
-                </a>
+                </div>
 
+                <div class="project-card" aria-label="智能开发" data-i18n-attr-aria-label="projects.roboticArm.aria">
+                    <div class="project-card__media">
+                        <img src="assets/img/tt1.png" alt="智能动图"<span data-i18n="projects.smartBin.repo">GitHub 源码 ↗</span> data-i18n-attr-alt="projects.roboticArm.alt">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 data-i18n="projects.roboticArm.title">机械臂抓取任务实践</h3>
+                        <p data-i18n="projects.roboticArm.desc">探索强化学习在具身智能机器人 “物体操纵” 中的应用，在仿真环境中模拟后实现机械臂对不规则物体的自主抓取。</p>
+                        <ul class="project-card__highlights">
+                            <li data-i18n="projects.roboticArm.item1">基于 PyTorch+Gazebo+MoveIt! 构建机械臂仿真平台</li>
+                            <li data-i18n="projects.roboticArm.item2">选用 TurtleBot3 with OpenManipulator-X 机械臂模型，场景包含桌子、不规则物体（圆柱形直筒）</li>
+                            <li data-i18n="projects.roboticArm.item3">设计机械臂关节速度控制、 gripper 开合指令等</li>
+                        </ul>
+                        <!-- <div class="project-card__links">
+                            <span data-i18n="projects.roboticArm.repo">GitHub 源码 ↗</span>
+                            <a href="https://github.com/YourUsername/YourRepo" target="_blank" rel="noopener noreferrer" data-i18n="projects.roboticArm.repo">GitHub 源码 ↗</a>
+                        </div> -->
+                    </div>
+                </div>
                 <!-- <a class="project-card" href="projects/none.html" aria-label="智能开发">
                     <div class="project-card__media">
                         <img src="assets/img/bin1.gif" alt="智能动图">
@@ -352,7 +356,7 @@
     </main>
 
     <footer class="site-footer">
-        <p data-i18n="footer.copyright">© 2024 Chen Jia · Designed & Built with ❤️ & GPT-4o mini</p>
+        <p data-i18n="footer.copyright">© 2025 Chen Jia · Designed & Built with ❤️ & GPT5 Codex</p>
         <a class="footer__top" href="#top" data-i18n="footer.toTop">回到顶部</a>
     </footer>
 
